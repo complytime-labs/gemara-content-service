@@ -184,14 +184,14 @@ func (r *Registry) BlobPath(digest string) (string, error) {
 		return "", ErrBlobNotFound
 	}
 
-	if _, err := os.Stat(p); err != nil {
+	if _, err := os.Stat(absPath); err != nil {
 		if os.IsNotExist(err) {
 			return "", ErrBlobNotFound
 		}
 		return "", fmt.Errorf("checking blob %s: %w", digest, err)
 	}
 
-	return p, nil
+	return absPath, nil
 }
 
 // validAlgorithms lists the digest algorithms accepted by the registry.
