@@ -20,7 +20,7 @@ import (
 )
 
 func NewGinServer(service *compass.Service, registry *oci.Registry, port string, config *Config) *http.Server {
-	swagger, err := api.GetSwagger()
+	swagger, err := api.GetSpec()
 	if err != nil {
 		slog.Error("Error loading swagger spec", "err", err)
 		os.Exit(1)

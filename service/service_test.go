@@ -29,7 +29,7 @@ func TestNewService(t *testing.T) {
 func TestEnrich(t *testing.T) {
 	t.Run("Enrichment with mapping", func(t *testing.T) {
 		// Load the OpenAPI spec for validation
-		swagger, err := api.GetSwagger()
+		swagger, err := api.GetSpec()
 		require.NoError(t, err)
 
 		// Set up a mapper with plans and catalog for successful mapping
@@ -96,7 +96,7 @@ func TestEnrich(t *testing.T) {
 	})
 
 	t.Run("Enrichment Unmapped", func(t *testing.T) {
-		swagger, err := api.GetSwagger()
+		swagger, err := api.GetSpec()
 		require.NoError(t, err)
 
 		// Set up a mapper without plans or with empty scope to trigger unmapped response
