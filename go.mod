@@ -3,7 +3,7 @@ module github.com/complytime/gemara-content-service
 go 1.26.3
 
 require (
-	github.com/coreos/go-oidc/v3 v3.18.0
+	github.com/coreos/go-oidc/v3 v3.19.0
 	github.com/getkin/kin-openapi v0.140.0
 	github.com/gin-contrib/requestid v1.0.6
 	github.com/gin-gonic/gin v1.12.0
