@@ -8,8 +8,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/goccy/go-yaml"
 	gemara "github.com/gemaraproj/go-gemara"
+	"github.com/goccy/go-yaml"
 
 	"github.com/complytime/gemara-content-service/mapper"
 	"github.com/complytime/gemara-content-service/mapper/factory"

@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/complytime/gemara-content-service/mapper/plugins/basic"
-	"github.com/getkin/kin-openapi/openapi3"
 	gemara "github.com/gemaraproj/go-gemara"
+	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	"github.com/complytime/gemara-content-service/api"
 	"github.com/complytime/gemara-content-service/mapper"
+	"github.com/complytime/gemara-content-service/mapper/plugins/basic"
 )
 
 func TestNewService(t *testing.T) {
